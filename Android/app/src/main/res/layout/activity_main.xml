@@ -118,7 +118,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="200dp"
         android:layout_weight="1"
         android:background="@drawable/img_gray_border"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -187,5 +187,18 @@
         android:textSize="14sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textViewIndicateHint"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Propeller_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="70dp"
+        android:onClick="onTapPropeller"
+        android:text="@string/propeller_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewLog" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
