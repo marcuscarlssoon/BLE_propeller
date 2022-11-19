@@ -43,6 +43,10 @@ class FirstFragment : Fragment() {
             }
 
         }
+        binding.buttonChangeState.setOnLongClickListener{
+            activity?.setContentView(R.layout.activity_main)
+            return@setOnLongClickListener true
+        }
     }
 
     override fun onDestroyView() {
